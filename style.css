@@ -44,6 +44,7 @@ body {
 
 .input {
     padding: 0 20px;
+    margin: 0 1%;
     border: 5px solid rgb(238, 238, 238);
     width: 75%;
     font-size: 25px;
