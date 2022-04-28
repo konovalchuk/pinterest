@@ -27,7 +27,7 @@
 
 
 
-    <div id="pin-mountains" class="pin-container mountains">
+    <div id="pin-mountains" class="pin-container display-none">
         <div class="pin-flex">
             <div class="relative"><span class="descr">
                     <button class="button-save">Сохранить</button>
@@ -136,7 +136,7 @@
 
 
 
-    <div id="pin-animals" class="pin-container">
+    <div id="pin-animals" class="pin-container display-none">
         <div class="pin-flex">
             <div class="relative"><span class="descr">
                     <button class="button-save">Сохранить</button>
@@ -257,7 +257,7 @@
 
 
 
-    <div id="pin-city" class="pin-container city">
+    <div id="pin-city" class="pin-container display-none">
         <div class="pin-flex">
             <div class="relative"><span class="descr">
                     <button class="button-save">Сохранить</button>
@@ -381,7 +381,7 @@
     </div>
 
     <div id="complaint" class="tab-complaint">
-        <h2>Жалоба на пин</h2>
+        <h3>Жалоба на пин</h3>
         <form action="complaint">
             <p><input name="сomplaint" type="radio" value="cpam"> Спам</p>
             <p class="title">Вводящие в заблуждение или повторяющиеся публикации</p>
@@ -402,8 +402,8 @@
             <p><input name="сomplaint" type="radio" value="intellectual"> Это моя интеллектуальная собственность</p>
             <p class="title">Нарушение авторских прав или прав на товарный знак</p>
             <div class="buttons">
-                <p><input type="submit" class="submit" value="Отмена"></p>
-                <p><input type="submit" class="submit" value="Далее"></p>
+                <button id="back" class="submit">Отмена</button>
+                <button id="next" class="submit">Далее</button>
             </div>
         </form>
     </div>
