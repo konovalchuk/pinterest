@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./Logo.png" type="image/x-icon">
+    <link rel="icon" href="./img/Logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Pinterest</title>
 </head>
@@ -16,48 +16,399 @@
             <img src="./img/Logo.png" width="40px" alt="Здесь должнен быть логотип">
             <button class="home header-elem">Главная</button>
         </div>
-            <input type="search" class="header-elem input center-elem" placeholder="Поиск">
+        <input type="search" class="header-elem input center-elem" placeholder="Поиск">
         <section class="center-elem menu">
-<img src="./img/notifivation.png" width="40px" alt="уведомление">
-<img src="./img/message.png" width="40px" alt="сообщение">
-<img src="./img/avatar.png" width="40px" alt="аватарка">
-            <select name="доски">
-                <option value="1"></option>
-                <option value="2">Доска 1</option>
-                <option value="3">Доска 2</option>
-                <option value="4">Доска 3</option>
-            </select>
+            <img src="./img/notifivation.png" width="40px" alt="уведомление">
+            <img src="./img/message.png" width="40px" alt="сообщение">
+            <img src="./img/avatar.png" width="40px" alt="аватарка">
+            <img id="board" src="https://cdn-icons-png.flaticon.com/512/25/25623.png" width="20px">
         </section>
     </div>
-    <div class="pin-container">
-<div class="pin-flex">
-    <div><img src="https://u.kanobu.ru/editor/images/88/aeefb104-8670-402b-bd9f-1f945ee8d3d0.gif" class="pin" width="100%" alt=""></div>
-    <div><img src="https://i.pinimg.com/originals/b9/59/f1/b959f1670d2631589643575de5a782b7.jpg" class="pin" width="100%" alt=""></div>
-    <div><img src="http://pa1.narvii.com/6846/ebf10202ce1a5f9ab6537d7388ae5eb0b35f22ce_00.gif" class="pin" width="100%" alt=""></div>
-</div>
-<div class="pin-flex">
-    <div><img src="https://pa1.narvii.com/6874/e182942e7148d4706124463674c59da0afa29b0cr1-320-320_hq.gif" class="pin" width="100%" alt=""></div>
-    <div><img src="http://pa1.narvii.com/6846/ebf10202ce1a5f9ab6537d7388ae5eb0b35f22ce_00.gif" class="pin" width="100%" alt=""></div>
-    <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Rotating_earth_%28large%29.gif/274px-Rotating_earth_%28large%29.gif" class="pin" width="100%" alt=""></div>
-</div>
-<div class="pin-flex">
-    <div><img src="https://media0.giphy.com/media/jqeLLIkUgsLclYaTqD/giphy.gif" class="pin" width="100%" alt=""></div>
-    <div><img src="https://i.pinimg.com/originals/b9/59/f1/b959f1670d2631589643575de5a782b7.jpg" class="pin" width="100%" alt=""></div>
-    <div><img src="http://pa1.narvii.com/6846/ebf10202ce1a5f9ab6537d7388ae5eb0b35f22ce_00.gif" class="pin" width="100%" alt=""></div>
-</div>
-<div class="pin-flex">
-    <div><img src="https://pa1.narvii.com/6874/e182942e7148d4706124463674c59da0afa29b0cr1-320-320_hq.gif" class="pin" width="100%" alt=""></div>
-    <div><img src="http://pa1.narvii.com/6846/ebf10202ce1a5f9ab6537d7388ae5eb0b35f22ce_00.gif" class="pin" width="100%" alt=""></div>
-    <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Rotating_earth_%28large%29.gif/274px-Rotating_earth_%28large%29.gif" class="pin" width="100%" alt=""></div>
-</div>
-<div class="pin-flex">
-    <div><img src="https://media0.giphy.com/media/jqeLLIkUgsLclYaTqD/giphy.gif" class="pin" width="100%" alt=""></div>
-    <div><img src="https://i.pinimg.com/originals/b9/59/f1/b959f1670d2631589643575de5a782b7.jpg" class="pin" width="100%" alt=""></div>
-    <div><img src="http://pa1.narvii.com/6846/ebf10202ce1a5f9ab6537d7388ae5eb0b35f22ce_00.gif" class="pin" width="100%" alt=""></div>
-</div>
 
 
+
+    <div id="pin-mountains" class="pin-container mountains">
+        <div class="pin-flex">
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/1.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/2.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative">
+                <span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/9.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative">
+                <span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button>
+                </span><img src="./img/10.jpg" class="pin" width="100%" alt="Alt">
+            </div>
+        </div>
+        <div class="pin-flex">
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/3.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/4.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/3.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/4.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+        </div>
+        <div class="pin-flex">
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/5.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/6.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/5.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/6.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+        </div>
+        <div class="pin-flex">
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/7.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative"> <span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button>
+                </span><img src="./img/8.jpg" class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/7.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative"> <span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button>
+                </span><img src="./img/8.jpg" class="pin" width="100%" alt="Alt">
+            </div>
+        </div>
+        <div class="pin-flex">
+            <div class="relative">
+                <span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/9.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative">
+                <span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button>
+                </span><img src="./img/10.jpg" class="pin" width="100%" alt="Alt">
+            </div>
+        </div>
     </div>
+
+
+
+    <div id="pin-animals" class="pin-container">
+        <div class="pin-flex">
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/31.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/32.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative">
+                <span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/33.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative">
+                <span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button>
+                </span><img src="./img/34.jpg" class="pin" width="100%" alt="Alt">
+            </div>
+        </div>
+        <div class="pin-flex">
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/35.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/36.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/37.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/38.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+        </div>
+        <div class="pin-flex">
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/39.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/40.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/41.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/42.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+        </div>
+        <div class="pin-flex">
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/43.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative"> <span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button>
+                </span><img src="./img/44.jpg" class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/45.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative"> <span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button>
+                </span><img src="./img/46.jpg" class="pin" width="100%" alt="Alt">
+            </div>
+        </div>
+        <div class="pin-flex">
+            <div class="relative">
+                <span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/47.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative">
+                <span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button>
+                </span><img src="./img/48.jpg" class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative">
+                <span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button>
+                </span><img src="./img/49.jpg" class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative">
+                <span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button>
+                </span><img src="./img/50.jpg" class="pin" width="100%" alt="Alt">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="pin-city" class="pin-container city">
+        <div class="pin-flex">
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/11.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/21.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative">
+                <span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/23.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative">
+                <span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button>
+                </span><img src="./img/30.jpg" class="pin" width="100%" alt="Alt">
+            </div>
+        </div>
+        <div class="pin-flex">
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/23.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/24.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/23.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/24.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+        </div>
+        <div class="pin-flex">
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/25.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/26.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/25.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/26.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+        </div>
+        <div class="pin-flex">
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/27.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative"> <span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button>
+                </span><img src="./img/28.jpg" class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative"><span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/27.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative"> <span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button>
+                </span><img src="./img/28.jpg" class="pin" width="100%" alt="Alt">
+            </div>
+        </div>
+        <div class="pin-flex">
+            <div class="relative">
+                <span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button></span><img src="./img/29.jpg"
+                    class="pin" width="100%" alt="Alt">
+            </div>
+            <div class="relative">
+                <span class="descr">
+                    <button class="button-save">Сохранить</button>
+                    <button class="button-save button-complain">Пожаловаться</button>
+                </span><img src="./img/30.jpg" class="pin" width="100%" alt="Alt">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="tabBoard" class="tab-board">
+        <h3>Выбор доски</h3>
+        <a href="#" id="mountains">
+            <p>Горы</p>
+        </a>
+        <a href="#" id="animals">
+            <p>Животные</p>
+        </a>
+        <a href="#" id="city">
+            <p>Город</p>
+        </a>
+    </div>
+
+    <div id="complaint" class="tab-complaint">
+        <h2>Жалоба на пин</h2>
+        <form action="complaint">
+            <p><input name="сomplaint" type="radio" value="cpam"> Спам</p>
+            <p class="title">Вводящие в заблуждение или повторяющиеся публикации</p>
+            <p><input name="сomplaint" type="radio" value="porno"> Изображения обнаженного тела или порнография</p>
+            <p class="title">Содержимое сексуального характера</p>
+            <p><input name="сomplaint" type="radio" value="membership"> Членовредительство</p>
+            <p class="title">Расстройство пищевого поведения, нанесение травм себе, суицид</p>
+            <p><input name="сomplaint" type="radio" value="false"> Ложная информация</p>
+            <p class="title">Health, climate, voting misinformation or conspiracies</p>
+            <p><input name="сomplaint" type="radio" value="aggression"> Агрессивные действия</p>
+            <p class="title">Предрассудки, стереотипы, идея превосходства белой рассы, оскорбления</p>
+            <p><input name="сomplaint" type="radio" value="dangerous"> Опасные товары</p>
+            <p class="title">Наркотики, оружие, регулируемые товары</p>
+            <p><input name="сomplaint" type="radio" value="privacy"> Преследование или нарушение конфиденциальности </p>
+            <p class="title">Оскорбления, угрозы, публикация персональных данных</p>
+            <p><input name="сomplaint" type="radio" value="violence"> Сцены насилия</p>
+            <p class="title">Графическое изображение или пропаганда насилия</p>
+            <p><input name="сomplaint" type="radio" value="intellectual"> Это моя интеллектуальная собственность</p>
+            <p class="title">Нарушение авторских прав или прав на товарный знак</p>
+            <div class="buttons">
+                <p><input type="submit" class="submit" value="Отмена"></p>
+                <p><input type="submit" class="submit" value="Далее"></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="./index.js"></script>
 </body>
 
 </html>
