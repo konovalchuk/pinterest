@@ -2,14 +2,13 @@ html,
 body,
 * {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
     font-family: "Segoe UI";
     font-size: 12px;
 }
 
 body {
-    display: block;
+
     min-height: 100%;
     overflow-y: scroll;
     position: relative;
@@ -18,7 +17,6 @@ body {
 .center-elem {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .header {
@@ -28,14 +26,11 @@ body {
 }
 
 .header-elem {
-
     height: 60px;
     border-radius: 100px;
 }
 
-.home{
-  height: 50px;
-    border-radius: 100px;
+.home {
     width: 120px;
     font-size: 20px;
     font-weight: 800;
@@ -44,10 +39,13 @@ body {
     margin-left: 10px;
 }
 
+input{
+    border: 5px solid rgb(238, 238, 238);
+}
+
 .input {
     padding: 0 20px;
     margin: 0 1%;
-    border: 5px solid rgb(238, 238, 238);
     width: 75%;
     font-size: 20px;
     background-color: rgb(238, 238, 238);
@@ -78,32 +76,19 @@ select {
     flex-direction: row;
 }
 
-.mountains{
-    display: none;
-}
-
-.animals{
-    display: none;
-}
-
-.city{
-    display: none;
-}
-
-.pin-container img{
+.pin-container img {
     display: block;
     max-width: 100%;
 }
 
 .pin-flex {
-    padding:auto 5px;
+    padding: auto 5px;
     width: 20%;
     display: flex;
     flex-direction: column;
 }
 
-
-.relative{
+.relative {
     display: inline-block;
     width: 97%;
     margin: 5px 0;
@@ -115,7 +100,7 @@ select {
     border-radius: 30px;
 }
 
-span{
+span {
     border-radius: 30px;
 }
 .tab-board {
@@ -135,22 +120,24 @@ span{
     display: block;
 }
 
+p {
+    font-size: 18px;
+    color: black;
+    padding: 7px;
+    list-style-type: none;
+}
+
 h3 {
     font-size: 20px;
     text-align: center;
     padding-bottom: 20px;
 }
-p,
-h3 {
-    padding: 7px;
-    list-style-type: none;
-    border-radius: 8px;
-}
+
 a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
-a:hover{
+a:hover {
     cursor: pointer;
     background: hsl(0, 32%, 92%);
 }
@@ -158,73 +145,69 @@ p:hover {
     background: hsl(0, 32%, 92%);
 }
 
-.descr{
+.descr {
     position: absolute;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color:rgba(0,0,0, .5);
-opacity: 0;
--webkit-transition: all.5s;
--o-transition: all.5s;
-transition: all.5s;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    -webkit-transition: all.5s;
+    -o-transition: all.5s;
+    transition: all.5s;
 }
 
-.relative:hover .descr{
+.relative:hover .descr {
     opacity: 1;
+    height: 97%;
     cursor: zoom-in;
 }
 
-button:hover{
+.relative img{
+    width: 100%;
+}
+
+button:hover {
     cursor: pointer;
-    filter:opacity(.5);
+    filter: opacity(0.5);
 }
 
-.button-save{
-background-color: rgb(255, 79, 79);
-width: 45%;
-height: 60px;
-border-radius: 25px;
-color: white;
-font-size: 20px;
-font-weight: 900;
-margin: 7px;
+.button-save {
+    background-color: rgb(255, 79, 79);
+    width: 45%;
+    height: 60px;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 7px;
 }
 
-.button-complain{
+.button-complain {
     background-color: black;
 }
 
-.tab-complaint{
+.tab-complaint {
     width: 40%;
     border-radius: 15px;
     background: rgb(245, 240, 240);
     padding: 25px 25px;
-position: absolute;
-top:50%;
-left: 50%;
-margin-right: -50%;
-transform: translate(-50%, -50%);
-display: none;
-z-index: 1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: none;
 }
-.tab-complaint-display-block{
+.tab-complaint-display-block {
     display: block;
 }
-.tab,.submit{
+.tab,
+.submit {
     cursor: pointer;
 }
-h2{
-    text-align: center;
-    padding: 10px;
-    font-size: 16px;
-}
-p{
-    font-size: 18px;
-    padding-top: 15px;
-    color:black;
-}
-.title{
+
+.title {
     color: gray;
     font-size: 16px;
     padding: 5px;
@@ -234,9 +217,6 @@ p{
 .submit {
     width: 120px;
     height: 50px;
-
-.pin{
-    padding: 5px 5px;
     border-radius: 30px;
     background: #ebe3e3;
     border: none;
@@ -246,13 +226,17 @@ p{
     margin-bottom: 5px;
     text-align: center;
 }
-.buttons{
+.buttons {
     display: flex;
     justify-content: end;
     margin-top: 15px;
     margin-right: 15px;
 }
 
-.submit:hover{
+.submit:hover {
     background: hsl(0, 19%, 88%);
+}
+
+.display-none {
+    display: none;
 }
