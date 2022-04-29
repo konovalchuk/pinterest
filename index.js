@@ -73,6 +73,7 @@ fetch("https://626afa0a6a86cd64adb6189e.mockapi.io/api/foto/foto")
     const picturesData = data.map(item => {
 const foto = document.createElement("img");
 foto.src = item.foto;
+foto.classList.add("pin");
 
 const name = document.createElement("span");
 name.textContent = item.name;
@@ -87,7 +88,26 @@ return container;
 
 const containers = [...document.getElementsByClassName("relative")];
 containers.forEach((item, i) => {
-
     item.appendChild(picturesData[i]);
 })
 })
+/*
+const containers = [...document.getElementsByClassName("pin-flex")];
+containers.forEach((item, i) => {
+    const divRelative = document.createElement("div");
+    divRelative.classList.add("relative");
+    const spanDescr = document.createElement("span");
+    spanDescr.classList.add("descr");
+    divRelative.appendChild(spanDescr);
+    const buttonNext = document.createElement("button");
+    buttonNext.classList.add("button-save");
+    buttonNext.innerHTML = "Сохранить";
+    spanDescr.appendChild(buttonNext);
+    const buttonBack = document.createElement("button");
+    buttonBack.classList.add("button-save");
+    buttonBack.classList.add("button-complain");
+    buttonBack.innerHTML = "Пожаловаться";
+    spanDescr.appendChild(buttonBack);
+    item.appendChild(picturesData[i]);
+})
+})*/

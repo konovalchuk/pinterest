@@ -163,6 +163,10 @@ p:hover {
     cursor: zoom-in;
 }
 
+.relative img{
+    width: 100%;
+}
+
 button:hover {
     cursor: pointer;
     filter: opacity(0.5);
