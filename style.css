@@ -159,6 +159,7 @@ p:hover {
 
 .relative:hover .descr {
     opacity: 1;
+    height: 97%;
     cursor: zoom-in;
 }
 
