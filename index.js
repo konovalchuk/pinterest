@@ -1,4 +1,5 @@
 ﻿//Запрос на сервер для получения фото
+let windowComplain = document.getElementById("complaint");
 fetch("https://626afa0a6a86cd64adb6189e.mockapi.io/api/foto/foto")  
 .then((response) => {
     return response.json();
@@ -33,16 +34,26 @@ containers.forEach((item, i) => {
     buttonComplaint.classList.add("button-save");
     buttonComplaint.classList.add("button-complain");
     buttonComplaint.innerHTML = "Пожаловаться";
+    buttonComplaint.addEventListener("click", () => {
+        windowComplain.classList.add("display-block");
+    });
     spanDescr.appendChild(buttonComplaint);
     item.appendChild(picturesData[i]);
 })
 })
 
 //Кнопка и окно Жалобы
-//let buttonComplain = document.getElementsByClassName("button-complain");
-let windowComplain = document.getElementById("complaint");
+let buttonComplain = document.getElementsByClassName("button-complain");
 
-//const buttonComplainArray = [...buttonComplain];
+// const buttonComplainArray = [...buttonComplain];
+// console.log('AAAAAAAAAAAAAa', buttonComplain);
+// buttonComplainArray.forEach(element => {
+//     console.log('element', element);
+//     element.addEventListener("click", () => {
+//         console.log('click');
+//         windowComplain.classList.add("display-block");
+//     })
+// });
 
 /*
 const buttons = document.getElementsByClassName('button-complain');
@@ -50,17 +61,16 @@ for (const button of buttons) {
   button.addEventListener('click', () => windowComplain.classList.add("display-block"));
 }*/
 
-let span = document.getElementsByClassName('descr');
+// let span = [...document.getElementsByClassName('descr')];
 
-const spanArray = [...span];
+// span.forEach(element => {
+// element.addEventListener('click', event => {
+//     console.log('event', event.target.className);
+//       if (event.target.className === "button-complain") {
+//         windowComplain.classList.add("display-block");
+//     }
 
-spanArray.forEach(element => {
-element.addEventListener('click', event => {
-      if (event.target.className === "button-complain") {
-        windowComplain.classList.add("display-block");
-    }
-
-      })});
+//       })});
 /*let span = document.getElementsByClassName("descr");
 
 const spanArray = [...span];
@@ -142,11 +152,11 @@ let buttonBack = document.getElementById("back");
 let buttonNext = document.getElementById("next");
 
 buttonNext.addEventListener("click", () => {
-    windowComplain.classList.add("display-none");
+    windowComplain.classList.remove("display-block");
 })
 
 buttonBack.addEventListener("click", () => {
-    windowComplain.classList.add("display-none");
+    windowComplain.classList.remove("display-block");
 })
 
 //Проверяем ключ в localStorage, чтобы при обновлении нужная доска оставалась открытой
