@@ -1,4 +1,4 @@
-﻿﻿//Запрос на сервер для получения фото
+﻿//Запрос на сервер для получения фото
 let windowComplain = document.getElementById("complaint");
 fetch("https://626afa0a6a86cd64adb6189e.mockapi.io/api/foto/foto")  
 .then((response) => {

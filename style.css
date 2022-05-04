@@ -180,9 +180,9 @@ button:hover {
     height: 60px;
     border-radius: 25px;
     color: white;
-    font-size: 20px;
+    font-size: 2vh;
     font-weight: 900;
-    margin: 7px;
+    margin:5% 2%;
 }
 
 .button-complain {
