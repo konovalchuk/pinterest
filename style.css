@@ -95,6 +95,7 @@ select {
 }
 
 .relative img {
+    width: 100%;
     border-radius: 30px;
 }
 
@@ -160,7 +161,7 @@ p:hover {
 
 .relative:hover .descr {
     opacity: 1;
-    height: 97%;
+    height: 100%;
     cursor: zoom-in;
 }
 

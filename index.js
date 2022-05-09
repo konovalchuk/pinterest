@@ -11,6 +11,7 @@ foto.src = item.foto;
 foto.classList.add("pin");
 const name = document.createElement("span");
 name.classList.add("name");
+name.classList.add("display-none");
 name.textContent = item.name;
 
 const container = document.createElement("div");
