@@ -1,5 +1,5 @@
-﻿//Запрос на сервер для получения фото
-let windowComplain = document.getElementById("complaint");
+﻿let windowComplain = document.getElementById("complaint");
+
 fetch("https://626afa0a6a86cd64adb6189e.mockapi.io/api/foto/foto")  
 .then((response) => {
     return response.json();
@@ -9,8 +9,8 @@ fetch("https://626afa0a6a86cd64adb6189e.mockapi.io/api/foto/foto")
 const foto = document.createElement("img");
 foto.src = item.foto;
 foto.classList.add("pin");
-
 const name = document.createElement("span");
+name.classList.add("name");
 name.textContent = item.name;
 
 const container = document.createElement("div");
@@ -42,53 +42,6 @@ containers.forEach((item, i) => {
 })
 })
 
-//Кнопка и окно Жалобы
-let buttonComplain = document.getElementsByClassName("button-complain");
-
-// const buttonComplainArray = [...buttonComplain];
-// console.log('AAAAAAAAAAAAAa', buttonComplain);
-// buttonComplainArray.forEach(element => {
-//     console.log('element', element);
-//     element.addEventListener("click", () => {
-//         console.log('click');
-//         windowComplain.classList.add("display-block");
-//     })
-// });
-
-/*
-const buttons = document.getElementsByClassName('button-complain');
-for (const button of buttons) {
-  button.addEventListener('click', () => windowComplain.classList.add("display-block"));
-}*/
-
-// let span = [...document.getElementsByClassName('descr')];
-
-// span.forEach(element => {
-// element.addEventListener('click', event => {
-//     console.log('event', event.target.className);
-//       if (event.target.className === "button-complain") {
-//         windowComplain.classList.add("display-block");
-//     }
-
-//       })});
-/*let span = document.getElementsByClassName("descr");
-const spanArray = [...span];
-    spanArray.onclick = function(event) {
-        let button = event.target.closest('button');
-        windowComplain.classList.add("display-block");
-};
-    buttonComplain.onclick = function(event) {
-        let target = event.target;
-        windowComplain.classList.add("display-block");
-};
-buttonComplainArray.forEach(element => {
-    element.addEventListener("click", () => {
-        windowComplain.classList.add("display-block");
-    })
-});*/
-
-
-
 
 //Окно с выбором доски
 let buttonBoard = document.getElementById("board");
@@ -112,18 +65,21 @@ function openAnimals(){
     pinAnimals.classList.remove("display-none");
     pinNature.classList.add("display-none");
     pinArt.classList.add("display-none");
+    tabBoard.classList.remove("tab-board-active");
 }
 
 function openNature(){
     pinNature.classList.remove("display-none");
     pinAnimals.classList.add("display-none");
     pinArt.classList.add("display-none");
+    tabBoard.classList.remove("tab-board-active");
 }
 
 function openArt(){
     pinArt.classList.remove("display-none");
     pinNature.classList.add("display-none");
     pinAnimals.classList.add("display-none");
+    tabBoard.classList.remove("tab-board-active");
 }
 
 //Открывает доску Животные
@@ -163,5 +119,24 @@ openNature();
 openArt();
 } else {
 openAnimals();
-    localStorage.setItem("board", 1);
 }
+
+//Поиск картинок
+window.onload = () => {
+    let input = document.getElementById("search");
+    input.oninput = function() {
+        let value = this.value.trim();
+        let list = document.querySelectorAll(".relative");
+        if(value != ""){
+            list.forEach(elem => {
+                if(elem.innerHTML.search(value) == -1) {
+                    elem.classList.add("display-none");
+                }
+            });
+        } else {
+            list.forEach(elem => {
+                elem.classList.remove("display-none");
+            } )
+        }
+    };
+};
