@@ -50,9 +50,7 @@ input {
     background-color: rgb(238, 238, 238);
     border: none;
 }
-input:focus {
-    border: 10px solid aqua;
-}
+
 input::placeholder {
     font-size: 20px;
     color: grey;
@@ -75,6 +73,7 @@ select {
     flex-direction: row;
 }
 
+
 .pin-container img {
     display: block;
     max-width: 100%;
@@ -96,6 +95,7 @@ select {
 }
 
 .relative img {
+    width: 100%;
     border-radius: 30px;
 }
 
@@ -161,12 +161,8 @@ p:hover {
 
 .relative:hover .descr {
     opacity: 1;
-    height: 97%;
+    height: 100%;
     cursor: zoom-in;
-}
-
-.relative img {
-    width: 100%;
 }
 
 button:hover {
@@ -180,9 +176,9 @@ button:hover {
     height: 60px;
     border-radius: 25px;
     color: white;
-    font-size: 20px;
+    font-size: 2vh;
     font-weight: 900;
-    margin: 7px;
+    margin:5% 2%;
 }
 
 .button-complain {
